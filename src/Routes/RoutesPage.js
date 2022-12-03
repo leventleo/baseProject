@@ -2,7 +2,6 @@ import { NavigationContainer } from '@react-navigation/native'
 import React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
 import { routes } from './routes'
-import Home from '../Pages/Home'
 import { CardStyleInterpolators } from '@react-navigation/stack';
 const Stack = createStackNavigator();
 const RoutesPage = () => {
@@ -13,9 +12,9 @@ const RoutesPage = () => {
                 headerMode: 'none'
             }}>
                 {
-                    routes.map((item) => {
+                    routes.map((item, index) => {
                         return (
-                            <Stack.Screen name={item.path} component={Home} />
+                            <Stack.Screen name={item.path} component={item.component} />
                         )
                     })
                 }
