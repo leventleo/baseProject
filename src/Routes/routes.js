@@ -10,13 +10,13 @@ export const routes = [
         permission: "anyallow"
     },
     {
-        path: 'login',
-        component: Login,
+        path: 'register',
+        component: Register,
         permission: "anyallow"
     },
     {
-        path: 'register',
-        component: Register,
+        path: 'login',
+        component: Login,
         permission: "anyallow"
     },
     {

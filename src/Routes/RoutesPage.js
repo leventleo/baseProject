@@ -14,7 +14,7 @@ const RoutesPage = () => {
                 {
                     routes.map((item, index) => {
                         return (
-                            <Stack.Screen name={item.path} component={item.component} />
+                            <Stack.Screen key={index} name={item.path} component={item.component} />
                         )
                     })
                 }
